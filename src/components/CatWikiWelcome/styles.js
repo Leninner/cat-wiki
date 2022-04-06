@@ -34,6 +34,8 @@ export const CatWikiWelcomeContainer = styled.div`
     form {
       width: 100%;
       height: 69.67px;
+      position: relative;
+      cursor: pointer;
 
       input {
         width: 100%;
@@ -45,6 +47,18 @@ export const CatWikiWelcomeContainer = styled.div`
         font-weight: 500;
         font-size: 18px;
         line-height: 22px;
+        cursor: pointer;
+      }
+
+      span {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        right: 0;
+        width: 28.6px;
+        display: flex;
+        align-items: center;
+        color: #291507;
       }
     }
   }

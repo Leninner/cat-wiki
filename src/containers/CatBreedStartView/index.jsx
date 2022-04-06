@@ -1,5 +1,5 @@
 import { CatWikiWelcome } from '../../components/CatWikiWelcome/CatWikiWelcome';
-import { MostSearchedBreeds } from './MostSearchedBreeds';
+import { MostSearchedBreeds } from '../../components/MostSearchedBreeds/MostSearchedBreeds';
 
 export const CatBreedStartView = () => {
   return (
