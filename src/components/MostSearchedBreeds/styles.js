@@ -21,7 +21,10 @@ export const MostSearchedBreedsContainer = styled.div`
       width: 59.18px;
       height: 3.21px;
       background-color: #4d270c;
+      margin-top: 8px;
     }
+
+    margin-bottom: 36px;
   }
 
   #discovered {

@@ -8,7 +8,7 @@ export const HaveACatContainer = styled.div`
   cursor: default;
   display: flex;
   justify-content: space-between;
-  margin-bottom: -70px;
+  margin-bottom: 75px;
 
   section {
     width: 50%;
@@ -37,6 +37,7 @@ export const HaveACatContainer = styled.div`
       height: 3.21px;
       background: #4d270c;
       border-radius: 77px;
+      margin-bottom: 17px;
     }
 
     .more {

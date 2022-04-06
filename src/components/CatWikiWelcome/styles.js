@@ -21,6 +21,7 @@ export const CatWikiWelcomeContainer = styled.div`
 
     img {
       border-radius: 0 0 0 0;
+      margin-bottom: 11px;
     }
 
     p {
@@ -29,6 +30,7 @@ export const CatWikiWelcomeContainer = styled.div`
       line-height: 29px;
       width: 371.3px;
       color: #ffffff;
+      margin-bottom: 52px;
     }
 
     form {
@@ -65,6 +67,11 @@ export const CatWikiWelcomeContainer = styled.div`
         position: absolute;
         top: 100%;
         color: white;
+        width: 394.62px;
+        height: 219.72px;
+        left: 0;
+        background: #ffffff;
+        border-radius: 24px;
       }
     }
   }
