@@ -60,6 +60,12 @@ export const CatWikiWelcomeContainer = styled.div`
         align-items: center;
         color: #291507;
       }
+
+      .options {
+        position: absolute;
+        top: 100%;
+        color: white;
+      }
     }
   }
 `;

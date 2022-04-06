@@ -7,9 +7,9 @@ export const CatBreedStartView = () => {
   const { data, isLoading } = useQuery('cats', getCatsInfo);
 
   return (
-    <div>
+    <>
       <CatWikiWelcome />
       <MostSearchedBreeds cats={data?.slice(0, 4)} />
-    </div>
+    </>
   );
 };
