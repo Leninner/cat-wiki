@@ -52,4 +52,28 @@ export const MostSearchedBreedsContainer = styled.div`
       }
     }
   }
+
+  #breeds-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 46px;
+
+    div {
+      img {
+        width: 220px;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 24px;
+      }
+
+      p {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        margin-top: 20px;
+        color: #291507;
+      }
+    }
+  }
 `;

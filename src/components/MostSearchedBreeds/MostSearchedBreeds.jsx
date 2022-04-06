@@ -1,7 +1,13 @@
 import { MostSearchedBreedsContainer } from './styles';
+import { useQuery } from 'react-query';
+import { getCatsInfo } from '../../utils/getCatsInfo';
 
 export const MostSearchedBreeds = () => {
   const array = [1, 2, 3, 4];
+
+  const { data, isLoading } = useQuery('cats', getCatsInfo);
+
+  console.log(data);
 
   return (
     <MostSearchedBreedsContainer>
@@ -17,11 +23,11 @@ export const MostSearchedBreeds = () => {
         </div>
       </div>
 
-      <div>
-        {array.map((item) => (
-          <div>
-            <img src='' alt='some' />
-            <span>Bengal</span>
+      <div id='breeds-container'>
+        {data.slice(0, 4)?.map(({ name, id, image: { url } }) => (
+          <div key={id}>
+            <img src={url} alt={name} />
+            <p>{name}</p>
           </div>
         ))}
       </div>
