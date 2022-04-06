@@ -6,9 +6,11 @@ import { useQuery } from 'react-query';
 export const CatBreedStartView = () => {
   const { data, isLoading } = useQuery('cats', getCatsInfo);
 
+  console.log(data);
+
   return (
     <>
-      <CatWikiWelcome />
+      <CatWikiWelcome cats={data} />
       <MostSearchedBreeds cats={data?.slice(0, 4)} />
     </>
   );

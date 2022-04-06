@@ -13,6 +13,8 @@ export const CatWikiWelcome = ({ cats }) => {
     return acc;
   }, []);
 
+  console.log(catsBreedsNames);
+
   return (
     <CatWikiWelcomeContainer>
       <img src={window.innerWidth > 992 ? CatLG : window.innerWidth > 768 ? CatMD : CatSM} alt='' />
