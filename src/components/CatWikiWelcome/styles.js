@@ -85,8 +85,16 @@ export const CatWikiWelcomeContainer = styled.div`
           height: 100%;
 
           .catsBreedsNames {
-            width: 100%;
-            height: 50px;
+            width: 360.01px;
+            height: 56.16px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            padding: 0 0 0 15px;
+
+            &:hover {
+              background: rgba(151, 151, 151, 0.1);
+            }
           }
 
           &::-webkit-scrollbar {
