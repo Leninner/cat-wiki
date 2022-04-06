@@ -6,7 +6,6 @@ export const MostSearchedBreedsContainer = styled.div`
   background-color: #e3e1dc;
   border-radius: 0 0 42px 42px;
   padding: 50px 107px 98px 108px;
-  margin-bottom: 100px;
   cursor: default;
 
   #most-searched {
