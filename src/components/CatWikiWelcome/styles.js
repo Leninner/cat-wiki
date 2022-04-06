@@ -56,7 +56,7 @@ export const CatWikiWelcomeContainer = styled.div`
         position: absolute;
         height: 100%;
         top: 0;
-        right: 0;
+        right: 28.6px;
         width: 28.6px;
         display: flex;
         align-items: center;
@@ -65,13 +65,57 @@ export const CatWikiWelcomeContainer = styled.div`
 
       .options {
         position: absolute;
-        top: 100%;
+        top: calc(100% + 17px);
         color: white;
         width: 394.62px;
         height: 219.72px;
         left: 0;
         background: #ffffff;
         border-radius: 24px;
+        padding: 15px 0 15px 25px;
+
+        #some {
+          position: relative;
+          color: black;
+          top: 0;
+          left: 0;
+          overflow-y: scroll;
+          overflow-x: hidden;
+          width: 100%;
+          height: 100%;
+
+          .catsBreedsNames {
+            width: 100%;
+            height: 50px;
+          }
+
+          &::-webkit-scrollbar {
+            -webkit-appearance: none;
+          }
+
+          &::-webkit-scrollbar:vertical {
+            width: 10px;
+          }
+
+          &::-webkit-scrollbar-button:increment,
+          &::-webkit-scrollbar-button {
+            display: none;
+          }
+
+          &::-webkit-scrollbar:horizontal {
+            height: 10px;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            background-color: #797979;
+            border-radius: 20px;
+            border: 2px solid #797979;
+          }
+
+          &::-webkit-scrollbar-track {
+            border-radius: 10px;
+          }
+        }
       }
     }
   }

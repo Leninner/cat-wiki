@@ -27,7 +27,19 @@ export const CatWikiWelcome = ({ cats }) => {
           <input type='text' placeholder='Enter your breed' />
           <span className='material-icons-outlined'>search</span>
 
-          {isSearching && <div className='options'>leninner</div>}
+          {isSearching && (
+            <div className='options'>
+              <div id='some'>
+                {catsBreedsNames.map((catBreed, index) => {
+                  return (
+                    <section className='catsBreedsNames' key={index}>
+                      {catBreed}
+                    </section>
+                  );
+                })}
+              </div>
+            </div>
+          )}
         </form>
       </div>
     </CatWikiWelcomeContainer>
