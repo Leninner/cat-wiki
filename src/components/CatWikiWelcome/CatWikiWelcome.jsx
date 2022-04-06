@@ -15,7 +15,7 @@ export const CatWikiWelcome = () => {
 
         <form>
           <input type='text' placeholder='Enter your breed' />
-          <span class='material-icons-outlined'>search</span>
+          <span className='material-icons-outlined'>search</span>
         </form>
       </div>
     </CatWikiWelcomeContainer>
