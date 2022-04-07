@@ -1,6 +1,7 @@
 import { MostSearchedBreedsContainer } from './styles';
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
+import { Link } from 'react-router-dom';
 
 export const MostSearchedBreeds = ({ cats = [], isLoading }) => {
   const array = [1, 2, 3, 4];
@@ -38,8 +39,10 @@ export const MostSearchedBreeds = ({ cats = [], isLoading }) => {
         ) : (
           cats.map(({ name, id, image: { url } }) => (
             <div key={id}>
-              <img src={url} alt={name} />
-              <p>{name}</p>
+              <Link to={`/cat/breed/${name}`} style={{ textDecoration: 'none' }}>
+                <img src={url} alt={name} />
+                <p>{name}</p>
+              </Link>
             </div>
           ))
         )}
