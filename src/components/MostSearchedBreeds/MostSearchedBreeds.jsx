@@ -8,7 +8,7 @@ export const MostSearchedBreeds = ({ cats = [], isLoading }) => {
   const navigate = useNavigate();
 
   const getCatBreedPage = (catBreed) => {
-    navigate(`/cats/breed/${catBreed.name}`, { state: { catBreed } });
+    navigate(`/cats/breed`, { state: { catBreed } });
   };
 
   return (

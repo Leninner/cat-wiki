@@ -11,7 +11,7 @@ export const App = () => {
       <Layout>
         <Routes>
           <Route path='/' element={<HomePage />} />
-          <Route path='/cats/breed/:breed' element={<CatBreedInfoPage />} />
+          <Route path='/cats/breed' element={<CatBreedInfoPage />} />
         </Routes>
       </Layout>
     </BrowserRouter>
