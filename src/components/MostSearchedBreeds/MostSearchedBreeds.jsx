@@ -16,6 +16,7 @@ export const MostSearchedBreeds = ({ cats = [] }) => {
       </div>
 
       <div id='breeds-container'>
+        <div className='box' />
         {cats.map(({ name, id, image: { url } }) => (
           <div key={id}>
             <img src={url} alt={name} />

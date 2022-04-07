@@ -61,13 +61,28 @@ export const MostSearchedBreedsContainer = styled.div`
     width: 100%;
     justify-content: space-between;
     margin-top: 46px;
+    position: relative;
+
+    .box {
+      position: absolute;
+      left: -14px;
+      z-index: 0;
+      top: 31.41px;
+      width: 46.96px;
+      height: 174.62px;
+      background: #dec68b;
+      border-radius: 14px;
+    }
 
     div {
+      position: sticky;
+
       img {
         width: 220px;
         height: 220px;
         object-fit: cover;
         border-radius: 24px;
+        z-index: 100;
       }
 
       p {
