@@ -1,3 +1,13 @@
+import { BreedInfoContainer } from '../containers/BreedInfoContainer';
+import { useLocation } from 'react-router-dom';
+
 export const CatBreedInfoPage = () => {
-  return <div>CatBreedInfoPage</div>;
+  const { state } = useLocation();
+  const { catBreed } = state;
+
+  return (
+    <div>
+      <BreedInfoContainer {...catBreed} />
+    </div>
+  );
 };
