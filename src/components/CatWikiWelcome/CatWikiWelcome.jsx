@@ -4,16 +4,23 @@ import CatMD from '../../assets/HeroImagemd.png';
 import CatSM from '../../assets/HeroImagesm.png';
 import CatWikiLogo from '../../assets/CatwikiLogo.svg';
 import { useState } from 'react';
+import { Options } from '../Options';
 
 export const CatWikiWelcome = ({ cats }) => {
   const [isSearching, setIsSearching] = useState(false);
+  const [searchValue, setSearchValue] = useState('');
 
   const catsBreedsNames = cats?.reduce((acc, curr) => {
     acc.push(curr.name);
     return acc;
   }, []);
 
-  console.log(catsBreedsNames);
+  const handleClick = (catBreed) => setSearchValue(catBreed);
+
+  const handleChange = (e) => {
+    const { value } = e.target;
+    setSearchValue(value);
+  };
 
   return (
     <CatWikiWelcomeContainer>
@@ -24,21 +31,11 @@ export const CatWikiWelcome = ({ cats }) => {
         <p>Get to know more about your cat breed</p>
 
         <form onClick={() => setIsSearching(!isSearching)}>
-          <input type='text' placeholder='Enter your breed' />
+          <input type='text' placeholder='Enter your breed' onChange={handleChange} value={searchValue} />
           <span className='material-icons-outlined'>search</span>
 
-          {isSearching && (
-            <div className='options'>
-              <div id='some'>
-                {catsBreedsNames.map((catBreed, index) => {
-                  return (
-                    <section className='catsBreedsNames' key={index}>
-                      {catBreed}
-                    </section>
-                  );
-                })}
-              </div>
-            </div>
+          {isSearching && catsBreedsNames.length && (
+            <Options catBreeds={catsBreedsNames} handleClick={handleClick} searchValue={searchValue} />
           )}
         </form>
       </div>
