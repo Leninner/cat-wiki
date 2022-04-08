@@ -1,8 +1,8 @@
-import { HashRouter, Route, Routes } from 'react-router-dom';
-import { GlobalStyles } from '../styles/GlobalStyles';
-import { Layout } from '../containers/Layout';
-import { HomePage } from '../pages/HomePage';
-import { CatBreedInfoPage } from '../pages/CatBreedInfoPage';
+import { HashRouter, Route, Routes } from 'react-router-dom'
+import { GlobalStyles } from '../styles/GlobalStyles'
+import { Layout } from '../containers/Layout'
+import { HomePage } from '../pages/HomePage'
+import { CatBreedInfoPage } from '../pages/CatBreedInfoPage'
 
 export const App = () => {
   return (
@@ -16,5 +16,5 @@ export const App = () => {
         </Routes>
       </Layout>
     </HashRouter>
-  );
-};
+  )
+}

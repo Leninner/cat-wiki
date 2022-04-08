@@ -1,4 +1,4 @@
-import { ImgContainer } from './styles';
+import { ImgContainer } from './styles'
 
 export const BreedInfoContainer = ({ image: { url }, name }) => {
   return (
@@ -8,5 +8,5 @@ export const BreedInfoContainer = ({ image: { url }, name }) => {
         <div />
       </ImgContainer>
     </div>
-  );
-};
+  )
+}

@@ -1,11 +1,11 @@
-import { CatWikiWelcome } from '../../components/CatWikiWelcome/CatWikiWelcome';
-import { MostSearchedBreeds } from '../../components/MostSearchedBreeds/MostSearchedBreeds';
-import { getCatsInfo } from '../../utils/getCatsInfo';
-import { useQuery } from 'react-query';
-import { HaveACat } from '../../components/HaveACat';
+import { CatWikiWelcome } from '../../components/CatWikiWelcome/CatWikiWelcome'
+import { MostSearchedBreeds } from '../../components/MostSearchedBreeds/MostSearchedBreeds'
+import { getCatsInfo } from '../../utils/getCatsInfo'
+import { useQuery } from 'react-query'
+import { HaveACat } from '../../components/HaveACat'
 
 export const CatBreedStartView = () => {
-  const { data, isLoading } = useQuery('cats', getCatsInfo);
+  const { data, isLoading } = useQuery('cats', getCatsInfo)
 
   return (
     <>
@@ -13,5 +13,5 @@ export const CatBreedStartView = () => {
       <MostSearchedBreeds cats={data?.slice(0, 4)} isLoading={isLoading} />
       <HaveACat />
     </>
-  );
-};
+  )
+}

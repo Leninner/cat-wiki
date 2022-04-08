@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const CatWikiWelcomeContainer = styled.div`
   height: 600px;
@@ -127,4 +127,4 @@ export const CatWikiWelcomeContainer = styled.div`
       }
     }
   }
-`;
+`

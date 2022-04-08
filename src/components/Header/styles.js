@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
   width: 100%;
@@ -7,4 +7,4 @@ export const HeaderContainer = styled.header`
   top: 0;
   z-index: 999;
   background: white;
-`;
+`

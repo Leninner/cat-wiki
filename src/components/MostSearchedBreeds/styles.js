@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const MostSearchedBreedsContainer = styled.div`
   height: 600px;
@@ -94,4 +94,4 @@ export const MostSearchedBreedsContainer = styled.div`
       }
     }
   }
-`;
+`

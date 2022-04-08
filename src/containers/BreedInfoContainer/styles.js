@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const ImgContainer = styled.div`
   width: 371.04px;
@@ -22,4 +22,4 @@ export const ImgContainer = styled.div`
     background: #dec68b;
     border-radius: 14px;
   }
-`;
+`
