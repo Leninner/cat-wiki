@@ -7,6 +7,14 @@ export const CatBreedDescription = ({
   temperament,
   origin,
   life_span: lifeSpan,
+  adaptability,
+  affection_level: affectionLevel,
+  child_friendly: childFriendly,
+  grooming,
+  intelligence,
+  health_issues: healthIssues,
+  social_needs: socialNeeds,
+  stranger_friendly: strangerFriendly,
 }) => {
   return (
     <CatBreedContainer>
@@ -29,56 +37,56 @@ export const CatBreedDescription = ({
         <div className='stuffed'>
           <span>Adaptability:</span>
           <div>
-            <CatCompartment stuffed={5} />
+            <CatCompartment stuffed={adaptability} />
           </div>
         </div>
 
         <div className='stuffed'>
           <span>Affection level:</span>
           <div>
-            <CatCompartment stuffed={1} />
+            <CatCompartment stuffed={affectionLevel} />
           </div>
         </div>
 
         <div className='stuffed'>
           <span>Child Friendly:</span>
           <div>
-            <CatCompartment />
+            <CatCompartment stuffed={childFriendly} />
           </div>
         </div>
 
         <div className='stuffed'>
           <span>Grooming:</span>
           <div>
-            <CatCompartment stuffed={3} />
+            <CatCompartment stuffed={grooming} />
           </div>
         </div>
 
         <div className='stuffed'>
           <span>Intelligence:</span>
           <div>
-            <CatCompartment stuffed={3} />
+            <CatCompartment stuffed={intelligence} />
           </div>
         </div>
 
         <div className='stuffed'>
           <span>Health issues:</span>
           <div>
-            <CatCompartment stuffed={3} />
+            <CatCompartment stuffed={healthIssues} />
           </div>
         </div>
 
         <div className='stuffed'>
           <span>Social needs:</span>
           <div>
-            <CatCompartment stuffed={3} />
+            <CatCompartment stuffed={socialNeeds} />
           </div>
         </div>
 
         <div className='stuffed'>
           <span>Stranger friendly:</span>
           <div>
-            <CatCompartment stuffed={3} />
+            <CatCompartment stuffed={strangerFriendly} />
           </div>
         </div>
       </section>
