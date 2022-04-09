@@ -1,12 +1,20 @@
-import { ImgContainer } from './styles'
+import { ImgContainer, StyledBreedInfoContainer } from './styles'
+import { CatBreedDescription } from '../../components/CatBreedDescription'
 
-export const BreedInfoContainer = ({ image: { url }, name }) => {
+export const BreedInfoContainer = (props) => {
+  const {
+    image: { url },
+    name,
+  } = props
+
   return (
-    <div>
+    <StyledBreedInfoContainer>
       <ImgContainer>
         <img src={url} alt={name} />
         <div />
       </ImgContainer>
-    </div>
+
+      <CatBreedDescription {...props} />
+    </StyledBreedInfoContainer>
   )
 }

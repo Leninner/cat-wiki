@@ -1,8 +1,15 @@
 import styled from 'styled-components'
 
+export const StyledBreedInfoContainer = styled.section`
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+`
+
 export const ImgContainer = styled.div`
-  width: 371.04px;
-  height: 371.04px;
+  max-width: 371.04px;
+  max-height: 371.04px;
   position: relative;
 
   img {
