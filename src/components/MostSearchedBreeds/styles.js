@@ -8,90 +8,117 @@ export const MostSearchedBreedsContainer = styled.div`
   padding: 50px 107px 98px 108px;
   cursor: default;
 
-  #most-searched {
-    h2 {
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 22px;
-      color: #291507;
-      cursor: pointer;
-    }
+  @media (max-width: 768px) {
+    padding: 0 0 63px 0;
+    height: auto;
+  }
+`
 
-    div {
-      width: 59.18px;
-      height: 3.21px;
-      background-color: #4d270c;
-      margin-top: 8px;
-    }
-
-    margin-bottom: 36px;
+export const MostSearched = styled.div`
+  h2 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #291507;
+    cursor: pointer;
   }
 
-  #discovered {
-    font-weight: 700;
+  div {
+    width: 59.18px;
+    height: 3.21px;
+    background-color: #4d270c;
+    margin-top: 8px;
+  }
+
+  margin-bottom: 36px;
+
+  @media (max-width: 768px) {
+    padding: 50px 0 0 29px;
+  }
+`
+
+export const DiscoveredContainer = styled.div`
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 0 29px;
+
+  h1 {
+    width: 536.93px;
+    height: 118px;
+    font-size: 48px;
+    line-height: 59px;
+    color: #291507;
+  }
+
+  div {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    color: rgba(41, 21, 7, 0.6);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    cursor: pointer;
 
-    h1 {
-      width: 536.93px;
-      height: 118px;
-      font-size: 48px;
-      line-height: 59px;
-      color: #291507;
-    }
-
-    div {
-      font-size: 18px;
-      line-height: 22px;
-      text-align: right;
-      color: rgba(41, 21, 7, 0.6);
-      display: flex;
-      align-items: center;
-      cursor: pointer;
-
-      span {
-        margin-left: 10px;
-      }
+    span {
+      margin-left: 10px;
     }
   }
 
-  #breeds-container {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin-top: 46px;
-    position: relative;
+  @media (max-width: 768px) {
+    div {
+      display: none;
+    }
+  }
+`
 
-    .box {
-      position: absolute;
-      left: -14px;
-      z-index: 0;
-      top: 31.41px;
-      width: 46.96px;
-      height: 174.62px;
-      background: #dec68b;
-      border-radius: 14px;
+export const BreedsContainer = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 46px;
+  position: relative;
+
+  .box {
+    position: absolute;
+    left: -14px;
+    z-index: 0;
+    top: 31.41px;
+    width: 46.96px;
+    height: 174.62px;
+    background: #dec68b;
+    border-radius: 14px;
+  }
+
+  div {
+    position: sticky;
+
+    img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 24px;
+      z-index: 100;
     }
 
-    div {
-      position: sticky;
+    p {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      margin-top: 20px;
+      color: #291507;
+    }
+  }
 
-      img {
-        width: 220px;
-        height: 220px;
-        object-fit: cover;
-        border-radius: 24px;
-        z-index: 100;
-      }
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    row-gap: 18px;
 
-      p {
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 22px;
-        margin-top: 20px;
-        color: #291507;
-      }
+    .box {
+      display: none;
     }
   }
 `

@@ -16,6 +16,7 @@ export const HaveACatContainer = styled.div`
 
   #information {
     max-width: 447.74px;
+
     h1 {
       font-weight: 700;
       font-size: 48px;
@@ -92,6 +93,32 @@ export const HaveACatContainer = styled.div`
       width: 238.47px;
       height: 385.87px;
       grid-area: 1 / 2 / 2 / 3;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 0px 29px 98px 29px;
+    height: auto;
+
+    section {
+      width: 100%;
+    }
+
+    #information {
+      max-width: none;
+
+      h1 {
+        width: 100%;
+      }
+
+      p {
+        width: 100%;
+      }
+    }
+
+    .more {
+      margin-bottom: 63px;
     }
   }
 `

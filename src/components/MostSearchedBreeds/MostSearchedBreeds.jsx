@@ -1,4 +1,9 @@
-import { MostSearchedBreedsContainer } from './styles'
+import {
+  MostSearchedBreedsContainer,
+  MostSearched,
+  DiscoveredContainer,
+  BreedsContainer,
+} from './styles'
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 import { useNavigate } from 'react-router-dom'
@@ -13,20 +18,21 @@ export const MostSearchedBreeds = ({ cats = [], isLoading }) => {
 
   return (
     <MostSearchedBreedsContainer>
-      <div id='most-searched'>
+      <MostSearched>
         <h2>Most Searched Breeds</h2>
         <div />
-      </div>
+      </MostSearched>
 
-      <div id='discovered'>
+      <DiscoveredContainer>
         <h1>66+ Breeds For you to discover</h1>
+
         <div>
-          SEE MORE{' '}
+          SEE MORE
           <span className='material-icons-outlined'>arrow_right_alt</span>
         </div>
-      </div>
+      </DiscoveredContainer>
 
-      <div id='breeds-container'>
+      <BreedsContainer>
         <div className='box' />
         {isLoading ? (
           <SkeletonTheme
@@ -61,7 +67,7 @@ export const MostSearchedBreeds = ({ cats = [], isLoading }) => {
             )
           })
         )}
-      </div>
+      </BreedsContainer>
     </MostSearchedBreedsContainer>
   )
 }

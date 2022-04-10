@@ -31,6 +31,10 @@ export const GlobalStyles = createGlobalStyle`
     &::-webkit-scrollbar-thumb {
       background: #888;
     }
+
+    @media (max-width: 768px) {
+      max-width: 95%;
+    }
   }
 
   input {

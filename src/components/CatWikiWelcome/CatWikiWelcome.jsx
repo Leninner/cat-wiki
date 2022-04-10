@@ -1,4 +1,4 @@
-import { CatWikiWelcomeContainer } from './styles'
+import { CatWikiWelcomeContainer, BreedSearcherForm } from './styles'
 import CatLG from '../../assets/HeroImagelg.png'
 import CatMD from '../../assets/HeroImagemd.png'
 import CatSM from '../../assets/HeroImagesm.png'
@@ -39,7 +39,7 @@ export const CatWikiWelcome = ({ cats }) => {
         <img src={CatWikiLogo} alt='' />
         <p>Get to know more about your cat breed</p>
 
-        <form onClick={() => setIsSearching(!isSearching)}>
+        <BreedSearcherForm onClick={() => setIsSearching(!isSearching)}>
           <input
             type='text'
             placeholder='Enter your breed'
@@ -55,7 +55,7 @@ export const CatWikiWelcome = ({ cats }) => {
               searchValue={searchValue}
             />
           )}
-        </form>
+        </BreedSearcherForm>
       </div>
     </CatWikiWelcomeContainer>
   )
