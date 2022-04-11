@@ -5,6 +5,10 @@ export const StyledBreedInfoContainer = styled.section`
   width: 100%;
   height: 100%;
   justify-content: space-around;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 export const ImgContainer = styled.div`
@@ -28,5 +32,20 @@ export const ImgContainer = styled.div`
     top: 31.41px;
     background: #dec68b;
     border-radius: 14px;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    max-height: none;
+    display: flex;
+    justify-content: center;
+
+    div {
+      display: none;
+    }
+
+    img {
+      width: 95%;
+    }
   }
 `

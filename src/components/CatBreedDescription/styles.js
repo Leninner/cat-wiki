@@ -38,4 +38,11 @@ export const CatBreedContainer = styled.section`
       margin-right: 30px;
     }
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+    padding: 0 29px;
+    margin-top: 25px;
+  }
 `

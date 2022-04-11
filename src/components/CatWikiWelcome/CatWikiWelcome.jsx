@@ -3,17 +3,27 @@ import CatLG from '../../assets/HeroImagelg.png'
 import CatWikiLogo from '../../assets/CatwikiLogo.svg'
 import { useState } from 'react'
 import { Options } from '../CatBreedOptions/Options'
+import { useNavigate } from 'react-router-dom'
 
 export const CatWikiWelcome = ({ cats }) => {
   const [isSearching, setIsSearching] = useState(false)
   const [searchValue, setSearchValue] = useState('')
+  const navigate = useNavigate()
 
   const catsBreedsNames = cats?.reduce((acc, curr) => {
     acc.push(curr.name)
     return acc
   }, [])
 
-  const handleClick = (catBreed) => setSearchValue(catBreed)
+  const handleClick = (catBreed) => {
+    setSearchValue(catBreed)
+    setIsSearching(false)
+    navigate(`/cats/breed/${catBreed}`, {
+      state: {
+        catBreed: cats.find((cat) => cat.name === catBreed),
+      },
+    })
+  }
 
   const handleChange = (e) => {
     const { value } = e.target
