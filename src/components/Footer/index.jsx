@@ -6,9 +6,19 @@ export const Footer = () => {
     <FooterContainer>
       <div>
         <CatWikiLogo fill='#FFFFFF' />
+
         <span>
-          ©created by <strong>leninner</strong> - DevChallenges{' '}
-          {new Date().getFullYear()}
+          created by{' '}
+          <strong>
+            <a
+              href='https://github.com/Leninner'
+              rel='noreferrer'
+              target='_blank'
+            >
+              @leninner
+            </a>
+          </strong>{' '}
+          - DevChallenges {new Date().getFullYear()}
         </span>
       </div>
     </FooterContainer>

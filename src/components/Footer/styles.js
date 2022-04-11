@@ -15,6 +15,20 @@ export const FooterContainer = styled.footer`
 
     span {
       color: #fff;
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    height: 150px;
+
+    div {
+      padding: 0;
+      flex-direction: column;
+      justify-content: center;
     }
   }
 `

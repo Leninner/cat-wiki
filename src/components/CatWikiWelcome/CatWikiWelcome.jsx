@@ -1,10 +1,8 @@
 import { CatWikiWelcomeContainer, BreedSearcherForm } from './styles'
 import CatLG from '../../assets/HeroImagelg.png'
-import CatMD from '../../assets/HeroImagemd.png'
-import CatSM from '../../assets/HeroImagesm.png'
 import CatWikiLogo from '../../assets/CatwikiLogo.svg'
 import { useState } from 'react'
-import { Options } from '../Options'
+import { Options } from '../CatBreedOptions/Options'
 
 export const CatWikiWelcome = ({ cats }) => {
   const [isSearching, setIsSearching] = useState(false)
@@ -24,16 +22,7 @@ export const CatWikiWelcome = ({ cats }) => {
 
   return (
     <CatWikiWelcomeContainer>
-      <img
-        src={
-          window.innerWidth > 992
-            ? CatLG
-            : window.innerWidth > 768
-            ? CatMD
-            : CatSM
-        }
-        alt=''
-      />
+      <img src={CatLG} alt='' />
 
       <div>
         <img src={CatWikiLogo} alt='' />
@@ -42,7 +31,9 @@ export const CatWikiWelcome = ({ cats }) => {
         <BreedSearcherForm onClick={() => setIsSearching(!isSearching)}>
           <input
             type='text'
-            placeholder='Enter your breed'
+            placeholder={
+              window.innerWidth > 768 ? 'Enter your breed' : 'Search'
+            }
             onChange={handleChange}
             value={searchValue}
           />

@@ -9,7 +9,7 @@ export const MostSearchedBreedsContainer = styled.div`
   cursor: default;
 
   @media (max-width: 768px) {
-    padding: 0 0 63px 0;
+    padding: 50px 29px 63px 29px;
     height: auto;
   }
 `
@@ -31,10 +31,6 @@ export const MostSearched = styled.div`
   }
 
   margin-bottom: 36px;
-
-  @media (max-width: 768px) {
-    padding: 50px 0 0 29px;
-  }
 `
 
 export const DiscoveredContainer = styled.div`
@@ -42,7 +38,6 @@ export const DiscoveredContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 0 0 29px;
 
   h1 {
     width: 536.93px;
@@ -112,10 +107,10 @@ export const BreedsContainer = styled.div`
   }
 
   @media (max-width: 768px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
-    row-gap: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
 
     .box {
       display: none;
