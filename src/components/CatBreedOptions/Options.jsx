@@ -10,9 +10,9 @@ export const Options = ({ catBreeds, handleClick, searchValue = '' }) => {
       <div>
         {catBreedsFiltered.map((catBreed, index) => {
           return (
-            <section key={index} onClick={() => handleClick(catBreed)}>
+            <div key={index} onClick={() => handleClick(catBreed)}>
               {catBreed}
-            </section>
+            </div>
           )
         })}
       </div>

@@ -50,7 +50,7 @@ export const CatBreedOptionsContainer = styled.section`
     width: 100%;
     height: 100%;
 
-    section {
+    div {
       width: 360.01px;
       height: 56.16px;
       border-radius: 12px;
