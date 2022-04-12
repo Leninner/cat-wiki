@@ -31,33 +31,35 @@ export const CatWikiWelcome = ({ cats }) => {
   }
 
   return (
-    <CatWikiWelcomeContainer>
-      <img src={CatLG} alt='' />
+    <>
+      <CatWikiWelcomeContainer>
+        <img src={CatLG} alt='' />
 
-      <div>
-        <img src={CatWikiLogo} alt='' />
-        <p>Get to know more about your cat breed</p>
+        <div>
+          <img src={CatWikiLogo} alt='' />
+          <p>Get to know more about your cat breed</p>
 
-        <BreedSearcherForm onClick={() => setIsSearching(!isSearching)}>
-          <input
-            type='text'
-            placeholder={
-              window.innerWidth > 768 ? 'Enter your breed' : 'Search'
-            }
-            onChange={handleChange}
-            value={searchValue}
-          />
-          <span className='material-icons-outlined'>search</span>
-
-          {isSearching && catsBreedsNames.length && (
-            <Options
-              catBreeds={catsBreedsNames}
-              handleClick={handleClick}
-              searchValue={searchValue}
+          <BreedSearcherForm onClick={() => setIsSearching(!isSearching)}>
+            <input
+              type='text'
+              placeholder={
+                window.innerWidth > 768 ? 'Enter your breed' : 'Search'
+              }
+              onChange={handleChange}
+              value={searchValue}
             />
-          )}
-        </BreedSearcherForm>
-      </div>
-    </CatWikiWelcomeContainer>
+            <span className='material-icons-outlined'>search</span>
+
+            {isSearching && catsBreedsNames.length && (
+              <Options
+                catBreeds={catsBreedsNames}
+                handleClick={handleClick}
+                searchValue={searchValue}
+              />
+            )}
+          </BreedSearcherForm>
+        </div>
+      </CatWikiWelcomeContainer>
+    </>
   )
 }

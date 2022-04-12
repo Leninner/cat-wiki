@@ -1,6 +1,10 @@
 import { CatBreedOptionsContainer } from './styles'
 
-export const Options = ({ catBreeds, handleClick, searchValue = '' }) => {
+export const Options = ({
+  catBreeds = [],
+  handleClick = () => {},
+  searchValue = '',
+}) => {
   const catBreedsFiltered = catBreeds.filter((catBreed) =>
     catBreed.toLowerCase().includes(searchValue.toLowerCase())
   )
