@@ -109,8 +109,9 @@ export const BreedsContainer = styled.div`
   @media (max-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     row-gap: 20px;
+    column-gap: 20px;
 
     .box {
       display: none;

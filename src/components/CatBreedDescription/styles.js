@@ -44,5 +44,13 @@ export const CatBreedContainer = styled.section`
     height: auto;
     padding: 0 29px;
     margin-top: 25px;
+
+    .stuffed {
+      flex-direction: column;
+
+      span {
+        margin-bottom: 15px;
+      }
+    }
   }
 `
