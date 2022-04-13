@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://the-cat-wiki.vercel.app/">
+    <a href="https://{your-demo-link.your-domain}">
       Demo
     </a>
     <span> | </span>
-    <a href="https://the-cat-wiki.vercel.app/">
+    <a href="https://{your-url-to-the-solution}">
       Solution
     </a>
     <span> | </span>
@@ -37,7 +37,7 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![image](https://user-images.githubusercontent.com/67031243/163285778-71e8232c-c026-4bd4-918e-e78af2c0fcf5.png)
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
@@ -51,14 +51,22 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 - [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- [React Router](https://reactrouter.com/)
+- [Styled Components](https://styled-components.com/)
+- [React Query](https://react-query.tanstack.com/)
 
 ## Features
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/f4NJ53rcfgrP6sBMD2jt) was to build an application to complete the given user stories.
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/f4NJ53rcfgrP6sBMD2jt) was to build an application to complete the given user stories:
+
+- ✅ User story: I can search for cat breeds and select a breed of my choice
+- ✅ User story: I can see the most popular searched cat breeds summary on the homepage
+- ✅ User story: I can see the top 10 most searched cat breeds
+- ✅ User story: I can see the breed details including description, temperament, origin, life span, adaptability, affection level, child-friendly, grooming, intelligence, health issues, social needs, stranger friendly
+- ✅ User story: I can see more photo of the breed
+- ✅ User story: On mobile, when I select the search option, a modal for breed search should pop up
 
 ## How To Use
 
@@ -77,16 +85,6 @@ $ npm install
 $ npm start
 ```
 
-## Acknowledgements
-
-<!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For example: -->
-
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
-
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- Website [leninner.vercel.app](https://leninner.vercel.app/)
