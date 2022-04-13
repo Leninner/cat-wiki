@@ -31,7 +31,6 @@
 - [Features](#features)
 - [How to use](#how-to-use)
 - [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
 
 <!-- OVERVIEW -->
 
@@ -39,12 +38,7 @@
 
 ![image](https://user-images.githubusercontent.com/67031243/163285778-71e8232c-c026-4bd4-918e-e78af2c0fcf5.png)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+The purpose of this project is to show the information of cat breeds in a very cool way. The user can search for a cat breed and see the information of the breed. The user can also see the pictures of the breed and the videos of the breed.
 
 ### Built With
 
